@@ -1,6 +1,7 @@
 package com.example.madeline.fridgefinder;
 
 import android.graphics.*;
+
 import com.google.android.gms.tasks.*;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
@@ -16,8 +17,10 @@ public class ImageProcessor {
     private FirebaseVisionImage image;
     private FirebaseVisionTextRecognizer textReader;
     public List<String> processedLines;
+    protected static int counter = 0;
 
     public ImageProcessor(Bitmap bm) {
+        counter = 0;
         image = FirebaseVisionImage.fromBitmap(bm);
         textReader = FirebaseVision.getInstance().getOnDeviceTextRecognizer();
         processedLines = new ArrayList<>();
@@ -27,8 +30,9 @@ public class ImageProcessor {
                     @Override
                     public void onSuccess(FirebaseVisionText result) {
                         for (FirebaseVisionText.TextBlock block : result.getTextBlocks()) {
-                            for (FirebaseVisionText.Line line: block.getLines()) {
+                            for (FirebaseVisionText.Line line : block.getLines()) {
                                 processedLines.add(line.getText());
+                                System.out.println(line.getText());
                             }
                         }
                         System.out.println("Image processed successfully");
@@ -43,6 +47,10 @@ public class ImageProcessor {
     }
 
     public List<String> getProcessedLines() {
-        return processedLines;
+        if (counter == 1){
+            counter++;
+            return processedLines;
+        }
+        return null;
     }
 }

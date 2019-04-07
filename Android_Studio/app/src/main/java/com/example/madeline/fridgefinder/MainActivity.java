@@ -2,7 +2,9 @@ package com.example.madeline.fridgefinder;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
@@ -22,6 +24,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.madeline.fridgefinder.db.ItemContract;
+import com.example.madeline.fridgefinder.db.ItemDbHelper;
+import com.google.android.gms.vision.L;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -36,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     String pathToFile;
     Bitmap mine;
-    ImageProcessor processor;
+    protected static ImageProcessor processor;
+    protected static boolean pictureTaken = false;
 
     private final int requestCode = 20;
 
@@ -45,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         //navigation
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -54,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_recents:
-                        Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
-                        Intent activity2Intent = new Intent(getApplicationContext(), MainActivity.class);
+                        //Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
+                        Intent activity2Intent = new Intent(getApplicationContext(), LstActivity.class);
                         startActivity(activity2Intent);
                         break;
                     case R.id.action_favorites:
-                        Intent activity3Intent = new Intent(getApplicationContext(), LstActivity.class);
+                        Intent activity3Intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(activity3Intent);
                         break;
                 }
@@ -71,11 +76,11 @@ public class MainActivity extends AppCompatActivity {
         //camera capture
 
         button = (Button) findViewById(R.id.button);
-        if(Build.VERSION.SDK_INT >=23){
+        if (Build.VERSION.SDK_INT >= 23) {
             requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
         }
         imageView = (ImageView) findViewById(R.id.image_view);
-        button.setOnClickListener(new View.OnClickListener(){
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent photoCaptureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -86,10 +91,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private File getFile(){
+    private File getFile() {
         File folder = new File("sdcard/camera_app");
 
-        if(!folder.exists()){
+        if (!folder.exists()) {
 
             folder.mkdir();
 
@@ -102,19 +107,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //if(this.requestCode == requestCode && resultCode == RESULT_OK){
-            Bitmap bitmap = (Bitmap)data.getExtras().get("data");
+        Bitmap bitmap = (Bitmap) data.getExtras().get("data");
 
-            String partFilename = currentDateFormat();
-            storeCameraPhotoInSDCard(bitmap, partFilename);
+        String partFilename = currentDateFormat();
+        storeCameraPhotoInSDCard(bitmap, partFilename);
 
-            // display the image from SD Card to ImageView Control
-            String storeFilename = "photo_" + partFilename + ".jpg";
-            Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
-            imageView.setImageBitmap(bitmap);
+        // display the image from SD Card to ImageView Control
+        //String storeFilename = "photo_" + partFilename + ".jpg";
+        //Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
+        imageView.setImageBitmap(bitmap);
 
-            mine = bitmap;
+        mine = bitmap;
 
-            processor = new ImageProcessor(bitmap);
+        processor = new ImageProcessor(bitmap);
+
+        //set true when picture is taken
+        pictureTaken = true;
+
+        //switch windows
+        Intent activity3Intent = new Intent(getApplicationContext(), LstActivity.class);
+        startActivity(activity3Intent);
+
+
     }
 
 
@@ -131,7 +145,8 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    private Bitmap getImageFileFromSDCard(String filename){
+
+    /*private Bitmap getImageFileFromSDCard(String filename){
         Bitmap bitmap = null;
         File imageFile = new File(Environment.getExternalStorageDirectory() + filename);
         try {
@@ -141,20 +156,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return bitmap;
-    }
-    private String currentDateFormat(){
+    }*/
+    private String currentDateFormat() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HH_mm_ss");
-        String  currentTimeStamp = dateFormat.format(new Date());
+        String currentTimeStamp = dateFormat.format(new Date());
         return currentTimeStamp;
     }
-    private void dispatchPictureTakerAction(){
+
+    private void dispatchPictureTakerAction() {
         Intent takePic = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if(takePic.resolveActivity(getPackageManager())!=null){
+        if (takePic.resolveActivity(getPackageManager()) != null) {
             File photoFile = null;
             photoFile = createPhotoFile();
 
-            if(photoFile!=null){
-                startActivityForResult(takePic,requestCode);
+            if (photoFile != null) {
+                startActivityForResult(takePic, requestCode);
 
             }
         }
@@ -166,9 +182,8 @@ public class MainActivity extends AppCompatActivity {
         File image = null;
 
         try {
-             image = File.createTempFile(name, ".jpg", storageDir);
-        }
-        catch(IOException e){
+            image = File.createTempFile(name, ".jpg", storageDir);
+        } catch (IOException e) {
             Log.d("mylog", "Excep : " + e.toString());
         }
         return image;

@@ -30,7 +30,7 @@ import com.example.madeline.fridgefinder.db.ItemContract;
 import com.example.madeline.fridgefinder.db.ItemDbHelper;
 
 import java.util.ArrayList;
-
+import java.util.List;
 
 
 public class LstActivity extends AppCompatActivity {
@@ -54,6 +54,34 @@ public class LstActivity extends AppCompatActivity {
         mItemListView = findViewById(R.id.list_food);
 
         mHelper = new ItemDbHelper(this);
+
+        //get strings
+        List<String> entries = MainActivity.processor.getProcessedLines();
+
+        if (entries != null) {
+            for (String s : entries) {
+                //populate list
+                String item = s;
+                System.out.println('x');
+                //get current date
+                String date = FoodEntry.currentDate();
+                //get database
+                SQLiteDatabase db = mHelper.getWritableDatabase();
+                ContentValues values = new ContentValues();
+                //put item into database
+                values.put(ItemContract.ItemEntry.COL_ITEM_TITLE, item);
+                //put date into database
+                values.put(ItemContract.ItemEntry.COL_ITEM_DATE, date);
+
+                db.insertWithOnConflict(ItemContract.ItemEntry.TABLE,
+                        null,
+                        values,
+                        SQLiteDatabase.CONFLICT_REPLACE);
+                db.close();
+            }
+
+        }
+
         updateUI();
 
 //        mTextMessage = (TextView) findViewById(R.id.message);
@@ -66,12 +94,12 @@ public class LstActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_recents:
-                        Toast.makeText(LstActivity.this, "Recents", Toast.LENGTH_SHORT).show();
-                        Intent activity2Intent = new Intent(getApplicationContext(), MainActivity.class);
+                        //Toast.makeText(LstActivity.this, "Recents", Toast.LENGTH_SHORT).show();
+                        Intent activity2Intent = new Intent(getApplicationContext(), LstActivity.class);
                         startActivity(activity2Intent);
                         break;
                     case R.id.action_favorites:
-                        Intent activity3Intent = new Intent(getApplicationContext(), LstActivity.class);
+                        Intent activity3Intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(activity3Intent);
                         break;
                 }
@@ -89,10 +117,10 @@ public class LstActivity extends AppCompatActivity {
 
     /**
      * handles when a new item is added to the list
-     * */
+     */
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.action_add_item:
                 final EditText itemEditText = new EditText(this);
                 AlertDialog dialog = new AlertDialog.Builder(this)
@@ -138,8 +166,8 @@ public class LstActivity extends AppCompatActivity {
     /**
      * method that deletes an item when the delete button is
      * pressed
-     * */
-    public void deleteItem(View view){
+     */
+    public void deleteItem(View view) {
         View parent = (View) view.getParent();
         TextView itemTextView = (TextView) parent.findViewById(R.id.food_name);
         String item = String.valueOf(itemTextView.getText());
@@ -152,10 +180,11 @@ public class LstActivity extends AppCompatActivity {
         //updates the UI
         updateUI();
     }
+
     /**
      * helper method to update UI
-     * */
-    private void updateUI(){
+     */
+    private void updateUI() {
         /*create a new class that contains each food and use instead of string*/
         ArrayList<FoodEntry> itemList = new ArrayList();
         //log tasks into database
@@ -164,7 +193,7 @@ public class LstActivity extends AppCompatActivity {
                 new String[]{ItemContract.ItemEntry._ID, ItemContract.ItemEntry.COL_ITEM_TITLE,
                         ItemContract.ItemEntry.COL_ITEM_DATE},
                 null, null, null, null, null);
-        while(cursor.moveToNext()) {
+        while (cursor.moveToNext()) {
             int idx = cursor.getColumnIndex(ItemContract.ItemEntry.COL_ITEM_TITLE);
             String nameOfEntry = cursor.getString(idx);
             idx = cursor.getColumnIndex(ItemContract.ItemEntry.COL_ITEM_DATE);
@@ -184,5 +213,6 @@ public class LstActivity extends AppCompatActivity {
         }
         cursor.close();
         db.close();
+        //MainActivity.pictureTaken = false;
     }
 }
