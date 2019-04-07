@@ -58,6 +58,7 @@ public class LstActivity extends AppCompatActivity {
         mItemListView = findViewById(R.id.list_food);
 
         mHelper = new ItemDbHelper(this);
+        updateUI();
 
         if (MainActivity.processor != null) {
             List<String> entries = MainActivity.processor.getProcessedLines();
@@ -135,7 +136,7 @@ public class LstActivity extends AppCompatActivity {
                 final NumberPicker expDays = new NumberPicker(this);
                 expDays.setMaxValue(100);
                 LinearLayout layout = new LinearLayout(this);
-                layout.setOrientation(LinearLayout.HORIZONTAL);
+                layout.setOrientation(LinearLayout.VERTICAL);
                 layout.addView(itemEditText);
                 layout.addView(expDays);
                 AlertDialog dialog = new AlertDialog.Builder(this)

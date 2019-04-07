@@ -28,7 +28,7 @@ public class ItemsAdapter extends ArrayAdapter<FoodEntry> {
         TextView foodName = (TextView) convertView.findViewById(R.id.food_name);
         // Populate the data into the template view using the data object
         dateAdded.setText(food.dateAdded);
-        expDate.setText(food.dateExpiry);
+        expDate.setText("Exp date: " +food.dateExpiry);
         foodName.setText(food.foodName);
         // Return the completed view to render on screen
         return convertView;

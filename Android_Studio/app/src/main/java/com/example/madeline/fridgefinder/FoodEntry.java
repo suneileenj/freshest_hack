@@ -32,7 +32,7 @@ public class FoodEntry {
         Calendar date = Calendar.getInstance();
         date.setTime(new Date()); //today's date
         date.add(Calendar.DATE, days);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, ''yy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, yy");
         this.dateExpiry = dateFormat.format(date.getTime());
 
     }
@@ -48,9 +48,9 @@ public class FoodEntry {
      * gets the current date
      * @return the current date in a string
      * */
-    @RequiresApi(api = Build.VERSION_CODES.N)
+    //@RequiresApi(api = Build.VERSION_CODES.N)
     protected static String currentDate(){
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, ''yy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, yy");
         return dateFormat.format(new Date());
     }
 
