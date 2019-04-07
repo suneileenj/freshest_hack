@@ -15,7 +15,7 @@ public class ImageProcessor {
 
     private FirebaseVisionImage image;
     private FirebaseVisionTextRecognizer textReader;
-    private List<String> processedLines;
+    public List<String> processedLines;
 
     public ImageProcessor(Bitmap bm) {
         image = FirebaseVisionImage.fromBitmap(bm);
