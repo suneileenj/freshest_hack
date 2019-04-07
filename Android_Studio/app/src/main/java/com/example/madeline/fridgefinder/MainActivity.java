@@ -108,16 +108,10 @@ public class MainActivity extends AppCompatActivity {
             String storeFilename = "photo_" + partFilename + ".jpg";
             Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
             imageView.setImageBitmap(bitmap);
-<<<<<<< HEAD
+
             mine = bitmap;
-=======
+
             processor = new ImageProcessor(bitmap);
-        List<String> lines = processor.getProcessedLines();
-        for(String s : lines) {
-            System.out.println(s);
-        }
->>>>>>> 42b3ea7123a1f32c5cd90210df2cc737c6d3fe22
-        //}
     }
 
 
@@ -125,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         File outputFile = new File(Environment.getExternalStorageDirectory(), "photo_" + currentDate + ".jpg");
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 600, fileOutputStream);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 50, fileOutputStream);
             fileOutputStream.flush();
             fileOutputStream.close();
         } catch (FileNotFoundException e) {
@@ -157,9 +151,6 @@ public class MainActivity extends AppCompatActivity {
             photoFile = createPhotoFile();
 
             if(photoFile!=null){
-//                String pathToFile = photoFile.getAbsolutePath();
-//                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.thecodecity.cameraandroid.fileprovider", photoFile);
-//                takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 startActivityForResult(takePic,requestCode);
 
             }

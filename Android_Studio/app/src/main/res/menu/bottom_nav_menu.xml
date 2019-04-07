@@ -4,13 +4,11 @@
         android:id="@+id/action_recents"
         android:enabled="true"
         android:icon="@drawable/ic_check_circle_black_24dp"
-        android:title="Recents"
-         />
+        android:title="List" />
     <item
         android:id="@+id/action_favorites"
         android:enabled="true"
         android:icon="@drawable/ic_camera_black_24dp"
-        android:title="Favorites"
-         />
+        android:title="Scan Receipt" />
 
 </menu>
