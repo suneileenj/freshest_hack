@@ -29,12 +29,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
     ImageView imageView;
     String pathToFile;
     Bitmap mine;
+    ImageProcessor processor;
 
     private final int requestCode = 20;
 
@@ -106,7 +108,15 @@ public class MainActivity extends AppCompatActivity {
             String storeFilename = "photo_" + partFilename + ".jpg";
             Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
             imageView.setImageBitmap(bitmap);
-            mine = bitmap;
+//<<<<<<< HEAD
+//            mine = bitmap;
+//=======
+//            processor = new ImageProcessor(bitmap);
+//        List<String> lines = processor.getProcessedLines();
+//        for(String s : lines) {
+//            System.out.println(s);
+//        }
+//>>>>>>> 42b3ea7123a1f32c5cd90210df2cc737c6d3fe22
         //}
     }
 
@@ -115,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         File outputFile = new File(Environment.getExternalStorageDirectory(), "photo_" + currentDate + ".jpg");
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fileOutputStream);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 600, fileOutputStream);
             fileOutputStream.flush();
             fileOutputStream.close();
         } catch (FileNotFoundException e) {
