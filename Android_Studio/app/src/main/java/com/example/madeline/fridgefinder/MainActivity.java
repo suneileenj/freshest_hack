@@ -27,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     ImageView imageView;
     String pathToFile;
+    Bitmap mine;
+
     static final int CAM_REQUEST = 1;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,21 +84,12 @@ public class MainActivity extends AppCompatActivity {
             File photoFile = null;
             photoFile = createPhotoFile();
             if(photoFile!=null){
-
-                String pathToFile = photoFile.getAbsolutePath();
-                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.thecodecity.cameraandroid.fileprovider", photoFile);
-                takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+//                String pathToFile = photoFile.getAbsolutePath();
+//                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.thecodecity.cameraandroid.fileprovider", photoFile);
+//                takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 startActivityForResult(takePic,1);
+                mine = BitmapFactory.decodeFile("/sdcard/image.jpg");
             }
-
-//            try{
-//
-//                photoFile = createPhotoFile();
-//            }
-//            catch(Exception){
-
-
-
         }
     }
 
