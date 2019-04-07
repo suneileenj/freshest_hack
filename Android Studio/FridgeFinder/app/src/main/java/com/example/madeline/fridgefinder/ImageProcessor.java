@@ -11,13 +11,13 @@ import java.util.*;
 
 // Contains everything for recognizing text from images
 
-public class TextProcessor {
+public class ImageProcessor {
 
     private FirebaseVisionImage image;
     private FirebaseVisionTextRecognizer textReader;
     private List<String> processedLines;
 
-    public TextProcessor(Bitmap bm) {
+    public ImageProcessor(Bitmap bm) {
         image = FirebaseVisionImage.fromBitmap(bm);
         textReader = FirebaseVision.getInstance().getOnDeviceTextRecognizer();
         processedLines = new ArrayList<>();
