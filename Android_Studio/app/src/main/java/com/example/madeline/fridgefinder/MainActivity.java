@@ -82,10 +82,10 @@ public class MainActivity extends AppCompatActivity {
             Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
             imageView.setImageBitmap(bitmap);
             processor = new ImageProcessor(bitmap);
-        List<String> lines = processor.getProcessedLines();
-        for(String s : lines) {
-            System.out.println(s);
-        }
+            List<String> lines = processor.getProcessedLines();
+            for(String s : lines) {
+                System.out.println(s);
+            }
         //}
     }
 
