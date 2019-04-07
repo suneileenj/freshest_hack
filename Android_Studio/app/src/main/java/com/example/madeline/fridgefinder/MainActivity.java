@@ -55,11 +55,11 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.action_recents:
                         Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
-                        Intent activity2Intent = new Intent(getApplicationContext(), LstActivity.class);
+                        Intent activity2Intent = new Intent(getApplicationContext(), Activity2.class);
                         startActivity(activity2Intent);
                         break;
                     case R.id.action_favorites:
-                        Intent activity3Intent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent activity3Intent = new Intent(getApplicationContext(), LstActivity.class);
                         startActivity(activity3Intent);
                         break;
                 }
