@@ -19,6 +19,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -29,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
     String pathToFile;
     Bitmap mine;
 
-    static final int CAM_REQUEST = 1;
-
+    private final int requestCode = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.image_view);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                dispatchPictureTakerAction();
-
+            public void onClick(View v) {
+                Intent photoCaptureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(photoCaptureIntent, requestCode);
             }
 
 
@@ -65,29 +67,62 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //if(this.requestCode == requestCode && resultCode == RESULT_OK){
+            Bitmap bitmap = (Bitmap)data.getExtras().get("data");
 
-       super.onActivityResult(requestCode,resultCode,data);
-       if(resultCode == RESULT_OK){
-           if(requestCode == 1){
-               Bitmap bitmap = BitmapFactory.decodeFile(pathToFile);
-               imageView.setImageBitmap(bitmap);
+            String partFilename = currentDateFormat();
+            storeCameraPhotoInSDCard(bitmap, partFilename);
 
-           }
-       }
-
+            // display the image from SD Card to ImageView Control
+            String storeFilename = "photo_" + partFilename + ".jpg";
+            Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
+            imageView.setImageBitmap(bitmap);
+        //}
     }
 
+
+    private void storeCameraPhotoInSDCard(Bitmap bitmap, String currentDate) {
+        File outputFile = new File(Environment.getExternalStorageDirectory(), "photo_" + currentDate + ".jpg");
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fileOutputStream);
+            fileOutputStream.flush();
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private Bitmap getImageFileFromSDCard(String filename){
+        Bitmap bitmap = null;
+        File imageFile = new File(Environment.getExternalStorageDirectory() + filename);
+        try {
+            FileInputStream fis = new FileInputStream(imageFile);
+            bitmap = BitmapFactory.decodeStream(fis);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return bitmap;
+    }
+    private String currentDateFormat(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HH_mm_ss");
+        String  currentTimeStamp = dateFormat.format(new Date());
+        return currentTimeStamp;
+    }
     private void dispatchPictureTakerAction(){
         Intent takePic = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if(takePic.resolveActivity(getPackageManager())!=null){
             File photoFile = null;
             photoFile = createPhotoFile();
+
             if(photoFile!=null){
 //                String pathToFile = photoFile.getAbsolutePath();
 //                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.thecodecity.cameraandroid.fileprovider", photoFile);
 //                takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
-                startActivityForResult(takePic,1);
+                startActivityForResult(takePic,requestCode);
                 mine = BitmapFactory.decodeFile("/sdcard/image.jpg");
             }
         }
@@ -97,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         String name = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File image = null;
+
         try {
              image = File.createTempFile(name, ".jpg", storageDir);
         }
