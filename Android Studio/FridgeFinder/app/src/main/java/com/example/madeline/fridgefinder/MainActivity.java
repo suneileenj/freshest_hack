@@ -1,11 +1,15 @@
 package com.example.madeline.fridgefinder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,12 +27,14 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_camera:
                     mTextMessage.setText(R.string.title_notifications);
                     return true;
             }
             return false;
         }
+
+
     };
 
     @Override
@@ -40,5 +46,11 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
-
+//    public void sendMessage(View view){
+//        Intent startNewActivity = new Intent(this, ListActivity.class);
+//        EditText theEditText = (EditText) findViewById(R.id.edit_message);
+//        String message = theEditText.getText().toString();
+//        startNewActivity.putExtra(EXTRA_MESSAGE, message);
+//        startActivity(startNewActivity);
+//    }
 }
