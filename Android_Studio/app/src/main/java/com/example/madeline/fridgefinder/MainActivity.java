@@ -108,15 +108,15 @@ public class MainActivity extends AppCompatActivity {
             String storeFilename = "photo_" + partFilename + ".jpg";
             Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
             imageView.setImageBitmap(bitmap);
-//<<<<<<< HEAD
-//            mine = bitmap;
-//=======
-//            processor = new ImageProcessor(bitmap);
-//        List<String> lines = processor.getProcessedLines();
-//        for(String s : lines) {
-//            System.out.println(s);
-//        }
-//>>>>>>> 42b3ea7123a1f32c5cd90210df2cc737c6d3fe22
+<<<<<<< HEAD
+            mine = bitmap;
+=======
+            processor = new ImageProcessor(bitmap);
+        List<String> lines = processor.getProcessedLines();
+        for(String s : lines) {
+            System.out.println(s);
+        }
+>>>>>>> 42b3ea7123a1f32c5cd90210df2cc737c6d3fe22
         //}
     }
 
