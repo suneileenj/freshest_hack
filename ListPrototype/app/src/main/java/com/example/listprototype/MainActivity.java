@@ -10,10 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.util.Log;
 
 import android.widget.TextView;
 
@@ -23,12 +21,12 @@ import com.example.listprototype.db.*;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+    //private static final String TAG = "MainActivity";
 
     //instance variables
     private ItemDbHelper mHelper;
     private ListView mItemListView;
-    private ArrayAdapter<String> mAdapter;
+    private ItemsAdapter mAdapter;
 
     /**
      * Creates a new state and updates the UI
@@ -61,21 +59,26 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.action_add_item:
-                final EditText taskEditText = new EditText(this);
+                final EditText itemEditText = new EditText(this);
                 AlertDialog dialog = new AlertDialog.Builder(this)
                         .setTitle("Add a new item")
                         .setMessage("What food would you like to add?")
-                        .setView(taskEditText)
+                        .setView(itemEditText)
                         .setPositiveButton("Add", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                //get string input
-                                String item = String.valueOf(taskEditText.getText());
+                                //get input, create new FoodEntry
+                                String item = String.valueOf(itemEditText.getText());
+                                //get current date
+                                String date = FoodEntry.currentDate();
                                 //get database
                                 SQLiteDatabase db = mHelper.getWritableDatabase();
                                 ContentValues values = new ContentValues();
                                 //put item into database
                                 values.put(ItemContract.ItemEntry.COL_ITEM_TITLE, item);
+                                //put date into database
+                                values.put(ItemContract.ItemEntry.COL_ITEM_DATE, date);
+
                                 db.insertWithOnConflict(ItemContract.ItemEntry.TABLE,
                                         null,
                                         values,
@@ -117,22 +120,23 @@ public class MainActivity extends AppCompatActivity {
      * */
     private void updateUI(){
         /*create a new class that contains each food and use instead of string*/
-        ArrayList<String> itemList = new ArrayList();
+        ArrayList<FoodEntry> itemList = new ArrayList();
         //log tasks into database
         SQLiteDatabase db = mHelper.getReadableDatabase();
         Cursor cursor = db.query(ItemContract.ItemEntry.TABLE,
-                new String[]{ItemContract.ItemEntry._ID, ItemContract.ItemEntry.COL_ITEM_TITLE},
+                new String[]{ItemContract.ItemEntry._ID, ItemContract.ItemEntry.COL_ITEM_TITLE,
+                ItemContract.ItemEntry.COL_ITEM_DATE},
                 null, null, null, null, null);
         while(cursor.moveToNext()) {
             int idx = cursor.getColumnIndex(ItemContract.ItemEntry.COL_ITEM_TITLE);
-            itemList.add(cursor.getString(idx));
+            String nameOfEntry = cursor.getString(idx);
+            idx = cursor.getColumnIndex(ItemContract.ItemEntry.COL_ITEM_DATE);
+            String dateOfEntry = cursor.getString(idx);
+            itemList.add(new FoodEntry(nameOfEntry, dateOfEntry));
         }
         //if mAdapter is null, create a new one
         if (mAdapter == null) {
-            mAdapter = new ArrayAdapter<>(this,
-                    R.layout.item_food, //the view to use for the food
-                    R.id.food_name, //where to put the string of data
-                    itemList); //where to get the data
+            mAdapter = new ItemsAdapter(this, itemList);
             mItemListView.setAdapter(mAdapter); //set it as adapter
 
         } else {
