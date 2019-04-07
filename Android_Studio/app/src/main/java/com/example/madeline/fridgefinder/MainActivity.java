@@ -25,12 +25,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
     ImageView imageView;
     String pathToFile;
     Bitmap mine;
+    ImageProcessor processor;
 
     private final int requestCode = 20;
 
@@ -79,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
             String storeFilename = "photo_" + partFilename + ".jpg";
             Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
             imageView.setImageBitmap(bitmap);
+            processor = new ImageProcessor(bitmap);
+        List<String> lines = processor.getProcessedLines();
+        for(String s : lines) {
+            System.out.println(s);
+        }
         //}
     }
 
