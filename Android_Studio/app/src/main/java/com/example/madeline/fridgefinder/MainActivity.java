@@ -10,13 +10,17 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -38,6 +42,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        //navigation
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_recents:
+                        Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_favorites:
+                        Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
+
+
+        //camera capture
+
         button = (Button) findViewById(R.id.button);
         if(Build.VERSION.SDK_INT >=23){
             requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
@@ -79,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
             String storeFilename = "photo_" + partFilename + ".jpg";
             Bitmap mBitmap = getImageFileFromSDCard(storeFilename);
             imageView.setImageBitmap(bitmap);
+            mine = bitmap;
         //}
     }
 
@@ -123,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 //                Uri photoURI = FileProvider.getUriForFile(MainActivity.this, "com.thecodecity.cameraandroid.fileprovider", photoFile);
 //                takePic.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 startActivityForResult(takePic,requestCode);
-                mine = BitmapFactory.decodeFile("/sdcard/image.jpg");
+
             }
         }
     }
