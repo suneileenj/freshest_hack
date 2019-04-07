@@ -24,9 +24,11 @@ public class ItemsAdapter extends ArrayAdapter<FoodEntry> {
         }
         // Lookup view for data population
         TextView dateAdded = (TextView) convertView.findViewById(R.id.date_added);
+        TextView expDate = (TextView) convertView.findViewById(R.id.exp_date);
         TextView foodName = (TextView) convertView.findViewById(R.id.food_name);
         // Populate the data into the template view using the data object
         dateAdded.setText(food.dateAdded);
+        expDate.setText(food.dateExpiry);
         foodName.setText(food.foodName);
         // Return the completed view to render on screen
         return convertView;

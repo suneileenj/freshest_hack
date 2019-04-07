@@ -9,6 +9,6 @@ public class ItemContract {
         public static final String TABLE = "items";
         public static final String COL_ITEM_TITLE = "title";
         public static final String COL_ITEM_DATE = "date";
-        //public static final String COL_ITEM_EXP = "days_til_expiry";
+        public static final String COL_ITEM_EXP = "exp_date";
     }
 }

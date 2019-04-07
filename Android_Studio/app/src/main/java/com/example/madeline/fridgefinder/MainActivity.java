@@ -63,15 +63,14 @@ public class MainActivity extends AppCompatActivity {
                         Intent activity2Intent = new Intent(getApplicationContext(), LstActivity.class);
                         startActivity(activity2Intent);
                         break;
-                    case R.id.action_favorites:
+                    /*case R.id.action_favorites:
                         Intent activity3Intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(activity3Intent);
-                        break;
+                        break;*/
                 }
                 return true;
             }
         });
-
 
         //camera capture
 
@@ -104,13 +103,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //if(this.requestCode == requestCode && resultCode == RESULT_OK){
         Bitmap bitmap = (Bitmap) data.getExtras().get("data");
 
         String partFilename = currentDateFormat();
-        storeCameraPhotoInSDCard(bitmap, partFilename);
+        //storeCameraPhotoInSDCard(bitmap, partFilename);
 
         // display the image from SD Card to ImageView Control
         //String storeFilename = "photo_" + partFilename + ".jpg";

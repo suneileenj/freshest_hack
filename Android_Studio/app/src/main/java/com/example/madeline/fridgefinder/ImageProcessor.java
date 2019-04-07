@@ -17,10 +17,9 @@ public class ImageProcessor {
     private FirebaseVisionImage image;
     private FirebaseVisionTextRecognizer textReader;
     public List<String> processedLines;
-    protected static int counter = 0;
+    //protected static int counter = 0;
 
     public ImageProcessor(Bitmap bm) {
-        counter = 0;
         image = FirebaseVisionImage.fromBitmap(bm);
         textReader = FirebaseVision.getInstance().getOnDeviceTextRecognizer();
         processedLines = new ArrayList<>();
@@ -47,10 +46,13 @@ public class ImageProcessor {
     }
 
     public List<String> getProcessedLines() {
-        if (counter == 1){
-            counter++;
+        if (processedLines == null){
+            processedLines = new ArrayList<>();
             return processedLines;
         }
-        return null;
+
+        List<String> temp = new ArrayList<>(processedLines);
+        processedLines.clear();
+        return temp;
     }
 }
