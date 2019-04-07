@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.action_recents:
                         Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
-                        Intent activity2Intent = new Intent(getApplicationContext(), Activity2.class);
+                        Intent activity2Intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(activity2Intent);
                         break;
                     case R.id.action_favorites:
