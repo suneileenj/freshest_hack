@@ -7,16 +7,31 @@ import android.support.annotation.RequiresApi;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * class for handling each entry entered into
+ * the list. Currently, each entry has
+ * an associated name, date added, and date
+ * of expiration.
+ *
+ * */
 public class FoodEntry {
     //instance variables
     String foodName;
     String dateAdded;
     String dateExpiry;
+
+    /**
+     * constructor that creates a new entry
+     * @param foodName the name of the food
+     * @param date the date added
+     * @param days the number of days until expiration
+     * */
     public FoodEntry(String foodName, String date, int days){
         this.setFoodName(foodName);
         this.setDateAdded(date);
         this.setExpiry(days);
     }
+
     /**
      * setter for foodname
      * @param name the name of the food
@@ -26,6 +41,8 @@ public class FoodEntry {
     }
     /**
      * setter for dateExpiry
+     * gets the current date and adds the days
+     * to set the date of expiration
      * @param days the days until expiry
      * */
     protected void setExpiry(int days){
@@ -39,13 +56,14 @@ public class FoodEntry {
 
     /**
      * setter for date
+     * @param date the date added
      * */
     protected void setDateAdded(String date){
         this.dateAdded = date;
     }
 
     /**
-     * gets the current date
+     * helper method that gets the current date
      * @return the current date in a string
      * */
     //@RequiresApi(api = Build.VERSION_CODES.N)

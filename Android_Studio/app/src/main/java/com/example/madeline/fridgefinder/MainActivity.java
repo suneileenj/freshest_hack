@@ -36,8 +36,14 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+/**
+ * handles the activity shown on app opening
+ * this activity contains the camera option
+ *
+ * */
 
 public class MainActivity extends AppCompatActivity {
+
     Button button;
     ImageView imageView;
     String pathToFile;
@@ -46,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
     protected static boolean pictureTaken = false;
 
     private final int requestCode = 20;
-
+    /**
+     * creates option to navigate to the other activity
+     * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
+            /**
+             * Starts the next activity if the button is pressed
+             * */
+
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_recents:
@@ -72,12 +84,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //camera capture
 
+        //handles camera and input
         button = (Button) findViewById(R.id.button);
         if (Build.VERSION.SDK_INT >= 23) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
+            requestPermissions(new String[]
+                    {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
         }
+
         imageView = (ImageView) findViewById(R.id.image_view);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
         File folder = new File("sdcard/camera_app");
 
         if (!folder.exists()) {
-
             folder.mkdir();
 
         }
@@ -102,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
         return image_file;
 
     }
+    /**
+     * occurs after a picture is taken
+     * */
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -119,12 +135,13 @@ public class MainActivity extends AppCompatActivity {
 
         mine = bitmap;
 
+        //creates a processor
         processor = new ImageProcessor(bitmap);
 
         //set true when picture is taken
-        pictureTaken = true;
+        //pictureTaken = true;
 
-        //switch windows
+        //switch activities to listview after a picture is taken
         Intent activity3Intent = new Intent(getApplicationContext(), LstActivity.class);
         startActivity(activity3Intent);
 
@@ -132,6 +149,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * stores the image if an SD card is included
+     * */
     private void storeCameraPhotoInSDCard(Bitmap bitmap, String currentDate) {
         File outputFile = new File(Environment.getExternalStorageDirectory(), "photo_" + currentDate + ".jpg");
         try {
@@ -157,6 +177,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return bitmap;
     }*/
+    /**
+     * method that gets the current date
+     * */
     private String currentDateFormat() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HH_mm_ss");
         String currentTimeStamp = dateFormat.format(new Date());
@@ -176,6 +199,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * creates a photo file
+     * */
     private File createPhotoFile() {
         String name = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);

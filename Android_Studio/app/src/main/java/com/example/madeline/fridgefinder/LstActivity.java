@@ -34,7 +34,12 @@ import com.example.madeline.fridgefinder.db.ItemDbHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Activity that handles the list of foods.
+ * displays the entries currently stored in the list
+ * and adds new entries from the camera and an
+ * add prompt.
+ * */
 public class LstActivity extends AppCompatActivity {
 
     static final int TWO_WEEKS = 14;
@@ -46,6 +51,9 @@ public class LstActivity extends AppCompatActivity {
     private ItemsAdapter mAdapter;
 
 
+    /**
+     * method that is run when the activity is started
+     * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,17 +64,19 @@ public class LstActivity extends AppCompatActivity {
         mHelper = new ItemDbHelper(this);
         //initialize viewer for list
         mItemListView = findViewById(R.id.list_food);
-
-        mHelper = new ItemDbHelper(this);
+        //update the UI
         updateUI();
 
+        //add the images if a picture has been taken
         if (MainActivity.processor != null) {
+            //gets the lines from the picture
             List<String> entries = MainActivity.processor.getProcessedLines();
+            //adds the pictures to the list if the list is not empty
             if (!entries.isEmpty()) {
                 for (String s : entries) {
                     //populate list
                     String item = s;
-                    System.out.println('x');
+                    //System.out.println('x');
                     //get current date
                     String date = FoodEntry.currentDate();
                     //get database
@@ -97,6 +107,7 @@ public class LstActivity extends AppCompatActivity {
 //        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
 //        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        //handles navigation to the camera activity
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -118,6 +129,9 @@ public class LstActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * creates an add button
+     * */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -126,12 +140,17 @@ public class LstActivity extends AppCompatActivity {
     }
 
     /**
-     * handles when a new item is added to the list
+     * handles when the add button is pressed
+     * looks to add a food manually to the list
+     * @param item the button being pressed
+     * @return true when a button is pressed
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            //case if add item was chosen
             case R.id.action_add_item:
+                //create the types of input buttons in the alert dialog
                 final EditText itemEditText = new EditText(this);
                 final NumberPicker expDays = new NumberPicker(this);
                 expDays.setMaxValue(100);
@@ -139,14 +158,21 @@ public class LstActivity extends AppCompatActivity {
                 layout.setOrientation(LinearLayout.VERTICAL);
                 layout.addView(itemEditText);
                 layout.addView(expDays);
+                //create an alert dialog that pops up when the add button is pressed
                 AlertDialog dialog = new AlertDialog.Builder(this)
+                        //set the contents of the dialog
                         .setTitle("Add a new item")
                         .setMessage("What food would you like to add?\n How many days until expiry?")
                         .setView(layout)
                         .setPositiveButton("Add", new DialogInterface.OnClickListener() {
+                            /**
+                             * handles adding the information inputted to the database
+                             * after the "Add" button has been pressed
+                             * */
                             @TargetApi(Build.VERSION_CODES.N)
                             @RequiresApi(api = Build.VERSION_CODES.N)
                             @Override
+
                             public void onClick(DialogInterface dialog, int which) {
                                 //get input, create new FoodEntry
                                 String item = String.valueOf(itemEditText.getText());
@@ -168,12 +194,14 @@ public class LstActivity extends AppCompatActivity {
                                         values,
                                         SQLiteDatabase.CONFLICT_REPLACE);
                                 db.close();
+                                //update the UI after the entry has been added
                                 updateUI();
                             }
                         })
 
                         .setNegativeButton("Cancel", null)
                         .create();
+                //show the dialog
                 dialog.show();
                 return true;
 
@@ -186,13 +214,15 @@ public class LstActivity extends AppCompatActivity {
     /**
      * method that deletes an item when the delete button is
      * pressed
+     * @param view the view
      */
     public void deleteItem(View view) {
         View parent = (View) view.getParent();
+        //gets the button that removes the entry
         TextView itemTextView = (TextView) parent.findViewById(R.id.food_name);
         String item = String.valueOf(itemTextView.getText());
         SQLiteDatabase db = mHelper.getWritableDatabase();
-        //gets the name of the item and deletes it from the database
+        //gets the name of the item and deletes its line from the database
         db.delete(ItemContract.ItemEntry.TABLE,
                 ItemContract.ItemEntry.COL_ITEM_TITLE + " = ?",
                 new String[]{item});
@@ -228,6 +258,7 @@ public class LstActivity extends AppCompatActivity {
             mItemListView.setAdapter(mAdapter); //set it as adapter
 
         } else {
+            //if mAdapter is not null, it's cleared and the current list is added
             mAdapter.clear();
             mAdapter.addAll(itemList);
             mAdapter.notifyDataSetChanged();
@@ -235,6 +266,6 @@ public class LstActivity extends AppCompatActivity {
         }
         cursor.close();
         db.close();
-        //MainActivity.pictureTaken = false;
+
     }
 }
