@@ -1,0 +1,421 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/f9625d17b6abdb2f4e54e529eb75ab0c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:design:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2990656604280173ab4ed09e53d87aca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/da370b87628b37b17e0516ff1b7885f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/2fc440ee15208d9f13bad7aee7e2551d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/cefe6cc22d1d2fa6f8f2e23b257bee83/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/7964c43396cf15be96a01a3fd9c624f2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-ml-vision:19.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-ml-vision-19.0.3.aar/1e98614ad47debd7cec3d3a7c249435a/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/a1278958e17880111da69856e44a3d07/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/105d62762f02f6687d8abc50bb209263/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/bc4bdaa20fc188c953f3a4c714c5126c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-image-label-17.0.2.aar/36c5680c620414286c64668d9ce869fa/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/a4ffcdc25aef2864b9cce8673ebf4a5e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-ml-common:17.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-ml-common-17.0.0.aar/f678570a5f7bbd21ae6d96858e46e957/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/b404613cd25dbc68b4658c5c7d54563c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/b3ef282796a73f2b127c1a09d8ca932e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/cae3e5c337d2f92d09ebcbc5f3f96ee2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/cb589bbac0ec162f06a99b0cd94ab8de/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c6f9673eb6e1d8b839e2178b4316e7cd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-16.4.0.aar/fc97b1af51ab7c44986d1d875090cd19/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.4.0.aar/ffd2a1410bf56d81863ef992ff638199/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/c3cc2f19708d4c1c8c25f5c916df106b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5eb5882e136c1b4c3161b7ece60f7c48/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0ae87fc46cad651488e4d9576afbc8bf/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9f8e8bf26f3bee01dbf1685201b33eb5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/de9c929cebc01ce1ee846205cd49c814/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/9427814cbee543a0e6e6f5aece95ae9e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/eb7c8e645ef6f59d4fac625033e42e87/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/28736cab76ce8ac1a27bb452b81054f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/79a4c5bc28c6459ca76ca67231274ba3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/08d4939a39f6f1139e01c8dbbe7dcb84/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ff21c25e46ea9c3cbc00eecddaebcefe/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/exifinterface-1.0.0.aar/dcb6b853ee3295c8e9027aecb037f3ee/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/fc3d9b0f2fef04aa57da64d6da9172d5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/32b9145180781624db3cc452341539d2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/56c4d63ffa14b82f8e741638900f591f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/20c83b46b00efcc04ab21837e4353696/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:3:5-48
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:5:5-30:19
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/f9625d17b6abdb2f4e54e529eb75ab0c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/f9625d17b6abdb2f4e54e529eb75ab0c/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/2fc440ee15208d9f13bad7aee7e2551d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/2fc440ee15208d9f13bad7aee7e2551d/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/a1278958e17880111da69856e44a3d07/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/a1278958e17880111da69856e44a3d07/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/bc4bdaa20fc188c953f3a4c714c5126c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/bc4bdaa20fc188c953f3a4c714c5126c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-image-label-17.0.2.aar/36c5680c620414286c64668d9ce869fa/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-image-label-17.0.2.aar/36c5680c620414286c64668d9ce869fa/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/a4ffcdc25aef2864b9cce8673ebf4a5e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/a4ffcdc25aef2864b9cce8673ebf4a5e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/b404613cd25dbc68b4658c5c7d54563c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/b404613cd25dbc68b4658c5c7d54563c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/cae3e5c337d2f92d09ebcbc5f3f96ee2/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/cae3e5c337d2f92d09ebcbc5f3f96ee2/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/cb589bbac0ec162f06a99b0cd94ab8de/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/cb589bbac0ec162f06a99b0cd94ab8de/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c6f9673eb6e1d8b839e2178b4316e7cd/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c6f9673eb6e1d8b839e2178b4316e7cd/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-16.4.0.aar/fc97b1af51ab7c44986d1d875090cd19/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-16.4.0.aar/fc97b1af51ab7c44986d1d875090cd19/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.4.0.aar/ffd2a1410bf56d81863ef992ff638199/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.4.0.aar/ffd2a1410bf56d81863ef992ff638199/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/c3cc2f19708d4c1c8c25f5c916df106b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/c3cc2f19708d4c1c8c25f5c916df106b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5eb5882e136c1b4c3161b7ece60f7c48/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5eb5882e136c1b4c3161b7ece60f7c48/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0ae87fc46cad651488e4d9576afbc8bf/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0ae87fc46cad651488e4d9576afbc8bf/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:22:5-26:19
+	android:supportsRtl
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.madeline.fridgefinder.MainActivity
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.example.madeline.fridgefinder.ListActivity
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:21:9-24:68
+	android:label
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:23:13-56
+	android:theme
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:24:13-56
+	android:name
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:22:13-41
+meta-data#com.google.firebase.ml.vision.DEPENDENCIES
+ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:26:9-28:35
+	android:value
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:28:13-32
+	android:name
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml:27:13-70
+uses-sdk
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/f9625d17b6abdb2f4e54e529eb75ab0c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/f9625d17b6abdb2f4e54e529eb75ab0c/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2990656604280173ab4ed09e53d87aca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2990656604280173ab4ed09e53d87aca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/da370b87628b37b17e0516ff1b7885f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/da370b87628b37b17e0516ff1b7885f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/2fc440ee15208d9f13bad7aee7e2551d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/2fc440ee15208d9f13bad7aee7e2551d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/cefe6cc22d1d2fa6f8f2e23b257bee83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/cefe6cc22d1d2fa6f8f2e23b257bee83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/7964c43396cf15be96a01a3fd9c624f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/7964c43396cf15be96a01a3fd9c624f2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-ml-vision:19.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-ml-vision-19.0.3.aar/1e98614ad47debd7cec3d3a7c249435a/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-vision:19.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-ml-vision-19.0.3.aar/1e98614ad47debd7cec3d3a7c249435a/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/a1278958e17880111da69856e44a3d07/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.4.0.aar/a1278958e17880111da69856e44a3d07/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/105d62762f02f6687d8abc50bb209263/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/105d62762f02f6687d8abc50bb209263/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/bc4bdaa20fc188c953f3a4c714c5126c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-17.0.2.aar/bc4bdaa20fc188c953f3a4c714c5126c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-image-label-17.0.2.aar/36c5680c620414286c64668d9ce869fa/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-image-label-17.0.2.aar/36c5680c620414286c64668d9ce869fa/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/a4ffcdc25aef2864b9cce8673ebf4a5e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-17.0.2.aar/a4ffcdc25aef2864b9cce8673ebf4a5e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-common:17.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-ml-common-17.0.0.aar/f678570a5f7bbd21ae6d96858e46e957/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-common:17.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-ml-common-17.0.0.aar/f678570a5f7bbd21ae6d96858e46e957/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/b404613cd25dbc68b4658c5c7d54563c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/b404613cd25dbc68b4658c5c7d54563c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/b3ef282796a73f2b127c1a09d8ca932e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/b3ef282796a73f2b127c1a09d8ca932e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/cae3e5c337d2f92d09ebcbc5f3f96ee2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/cae3e5c337d2f92d09ebcbc5f3f96ee2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/cb589bbac0ec162f06a99b0cd94ab8de/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/cb589bbac0ec162f06a99b0cd94ab8de/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c6f9673eb6e1d8b839e2178b4316e7cd/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/c6f9673eb6e1d8b839e2178b4316e7cd/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-16.4.0.aar/fc97b1af51ab7c44986d1d875090cd19/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-16.4.0.aar/fc97b1af51ab7c44986d1d875090cd19/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.4.0.aar/ffd2a1410bf56d81863ef992ff638199/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.4.0.aar/ffd2a1410bf56d81863ef992ff638199/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/c3cc2f19708d4c1c8c25f5c916df106b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/c3cc2f19708d4c1c8c25f5c916df106b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5eb5882e136c1b4c3161b7ece60f7c48/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5eb5882e136c1b4c3161b7ece60f7c48/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0ae87fc46cad651488e4d9576afbc8bf/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0ae87fc46cad651488e4d9576afbc8bf/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9f8e8bf26f3bee01dbf1685201b33eb5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9f8e8bf26f3bee01dbf1685201b33eb5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/de9c929cebc01ce1ee846205cd49c814/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/de9c929cebc01ce1ee846205cd49c814/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/9427814cbee543a0e6e6f5aece95ae9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/9427814cbee543a0e6e6f5aece95ae9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/eb7c8e645ef6f59d4fac625033e42e87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/eb7c8e645ef6f59d4fac625033e42e87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/28736cab76ce8ac1a27bb452b81054f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/28736cab76ce8ac1a27bb452b81054f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/79a4c5bc28c6459ca76ca67231274ba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/79a4c5bc28c6459ca76ca67231274ba3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/08d4939a39f6f1139e01c8dbbe7dcb84/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/08d4939a39f6f1139e01c8dbbe7dcb84/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ff21c25e46ea9c3cbc00eecddaebcefe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ff21c25e46ea9c3cbc00eecddaebcefe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/exifinterface-1.0.0.aar/dcb6b853ee3295c8e9027aecb037f3ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/exifinterface-1.0.0.aar/dcb6b853ee3295c8e9027aecb037f3ee/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/fc3d9b0f2fef04aa57da64d6da9172d5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/fc3d9b0f2fef04aa57da64d6da9172d5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/32b9145180781624db3cc452341539d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/32b9145180781624db3cc452341539d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/56c4d63ffa14b82f8e741638900f591f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/56c4d63ffa14b82f8e741638900f591f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/20c83b46b00efcc04ab21837e4353696/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/20c83b46b00efcc04ab21837e4353696/AndroidManifest.xml:20:5-44
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/madeline/Documents/GitHub/freshest_hack/Android Studio/FridgeFinder/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:22:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-sdk-api-16.4.0.aar/8fc3a0f0bb4b9094e3f986f7c4218b4c/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.4.0.aar/ff65df1f29a3968510ce2f6fc730a994/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/1a7e15d5947a28d06038c836017d5fe6/AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/60c175cd167a9b52b91d2d722e089bb2/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/madeline/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/4bbb77a5eedc15a6ac566cfee8c27a8f/AndroidManifest.xml:11:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-impl-16.4.0.aar/579972bb674db5d97def60867a230162/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-measurement-16.4.0.aar/fae71e0f6ca32f6f10499ad97557fa36/AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/madeline/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/29c880242a6cd6e7c3bc97c20dadcf05/AndroidManifest.xml:24:13-58

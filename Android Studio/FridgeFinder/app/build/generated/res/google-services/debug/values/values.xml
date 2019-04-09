@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://fridgefinder-30bff.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1018224728942</string>
+    <string name="google_api_key" translatable="false">AIzaSyBKbUyhJj9VwIjtM5lnxjsJOygIqg5zUk8</string>
+    <string name="google_app_id" translatable="false">1:1018224728942:android:16a7faede4fbf87b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBKbUyhJj9VwIjtM5lnxjsJOygIqg5zUk8</string>
+    <string name="google_storage_bucket" translatable="false">fridgefinder-30bff.appspot.com</string>
+    <string name="project_id" translatable="false">fridgefinder-30bff</string>
+</resources>
